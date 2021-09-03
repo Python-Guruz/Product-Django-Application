@@ -18,7 +18,7 @@ def products(request):
         if serializer.is_valid:
 
             serializer.save()
-            return Response({"message":"The dog has been created successfully",
+            return Response({"message":"The product has been created successfully",
                             "data" : serializer.data
 
             },status.HTTP_201_CREATED)
