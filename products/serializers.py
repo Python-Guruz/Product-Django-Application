@@ -5,7 +5,7 @@ from products.models import products
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model : products
-        fields : ('id','name','price','quantity')
+        fields = ("id", "name", "price", "quantity")
 
         def save(self,*args,**kwargs):
             Product = products(
